@@ -1,4 +1,4 @@
-# 🏗 QuickNode + Scaffold-ETH 2
+# 🏗 CryptoAid + Scaffold-ETH 2
 
 > **This is a customized version of the Scaffold-ETH 2 repository, modified to integrate with [QuickNode](https://www.quicknode.com/signup?utm_source=qn-github&utm_campaign=qn-scaffold).**
 
@@ -18,25 +18,40 @@
 
 ![Debug Contracts tab](https://github.com/scaffold-eth/scaffold-eth-2/assets/55535804/1171422a-0ce4-4203-bcd4-d2d1941d198b)
 
+## About CryptoAid
+
+CryptoAid is a decentralized app to manage your fundraising campaigns. Whether you are a student, an entrepreneur, or facing a health challenge, appropriate funds at the right time can help you overcome challenges and come back stronger in life.
+
+The application allows you to share the URL of your campaign within your circle, enabling your friends and relatives to easily donate any amount they choose. If they don't have a wallet, they can create one on the fly, fund it, and make the donation.
+
+The app is locally tested on Hardhat but can easily be distributed to QuickNode.
+
+## Challenges
+
+- **Why QuickNode is Required**: QuickNode provides robust and scalable nodes that enhance the performance and reliability of your dApp.
+- **Initial Setup**: Built multiple use cases, but most were too grand for my entry-level knowledge. Luckily, Scaffold-ETH simplified most of the initial setup problems I was struggling with.
+- **Fetching Campaigns**: Getting back a list of campaigns was a problem as it would cost a lot more gas. Nested calls in React `useEffect` were causing infinite loops, which I could not fix within the time constraints of the hackathon. Currently, the contract loads all campaigns in a single call.
+
+## Future
+
+The app will also help distribute funds within your circle or to people you need to pay out in groups. It can also give away NFTs to the top 3 donors or based on a lucky draw.
+
 ## Requirements
 
 Before you begin, you need to install the following tools:
 
 - [Node (v18 LTS)](https://nodejs.org/en/download/)
-- Yarn ([v1](https://classic.yarnpkg.com/en/docs/install/) or [v2+](https://yarnpkg.com/getting-started/install))
-- [Git](https://git-scm.com/downloads)
+- [Yarn](https://classic.yarnpkg.com/en/docs/install/#mac-stable)
+- [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 
-## Quickstart
+## Getting Started
 
-To get started with Scaffold-ETH 2, follow the steps below:
-
-**Step 1**: Clone this repo & install dependencies
-
-```sh
-git clone https://github.com/quiknode-labs/scaffold-eth-2
-cd scaffold-eth-2
-yarn install
-```
+1. **Clone the repository**:
+   ```sh
+   git clone https://github.com/your-repo/cryptoaid.git
+   cd cryptoaid
+   yarn install
+   ```
 
 **Step 2**: Setup for Deployment on Mainnet/Testnet
 
